@@ -1,0 +1,49 @@
+body{
+    text-align: center;
+    font-family: 微軟正黑體;
+
+}
+
+table{
+    width: 60%;
+    margin: auto;
+    border-color:red;
+    font-size: 2em;
+
+}
+li{
+    text-align: left;
+}
+
+tr{
+    color: black;
+}
+
+td{
+    border-bottom: 3px brown;
+}
+
+font{
+    color: gray;
+}
+
+.s1{
+    background-color: grey;
+}
+
+.s2{
+    background-color: khaki;
+
+}
+
+
+.row{
+
+    color: firebrick
+
+}
+
+.column{
+
+    color: orange;
+}
