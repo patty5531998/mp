@@ -29,7 +29,7 @@ function onYouTubeIframeAPIReady(){
 function onPlayerReady(event){
 
     $("#playButton").click(function(){
-        $("h2").text(player.getVideoDate().title);
+        $("h2").text(player.getVideoData().title);
         player.playVideo();
 
     });
@@ -37,7 +37,7 @@ function onPlayerReady(event){
 }
 
 function onPlayerStateChange(event){
-    console.log(evnt); 
+    //console.log(evnt); 
     if(Math.floor(player.getCurrentTime()) == playTime[currentPlay][1]){
         if(currentPlay < playList.length-1){
             currentPlay++;
@@ -61,8 +61,8 @@ function onPlayerStateChange(event){
         
     }
 
-    if(player.getVideoLodedFraction() > 0){
-        $("h2").text(player.getVideoDate().title);
+    if(player.getVideoLoadedFraction() > 0){
+        $("h2").text(player.getVideoData().title);
     }
 
 }

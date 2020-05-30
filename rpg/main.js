@@ -42,8 +42,8 @@ $(document).keydown(function(event){
     let targetImgMainX, targetImgMainY, targetBlock, cutImagePositionX;
 
     event.preventDefault();
-   
-    switch(event.code){
+    console.log(event);
+    switch(event.originalEvent.code){
         
         case "ArrowLeft":
             targetImgMainX = currentImgMainX - 200;
